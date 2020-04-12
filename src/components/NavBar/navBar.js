@@ -1,5 +1,7 @@
 import React from "react";
-import { BrowserRouter as Router } from "react-router-dom";
+import { BrowserRouter as Router, Route, Link } from "react-router-dom";
+import Routes from"../../Routes";
+
 import {
   MDBNavbar, MDBNavbarBrand, MDBNavbarNav, MDBNavItem, MDBNavLink, MDBNavbarToggler,
   MDBCollapse,
@@ -7,11 +9,9 @@ import {
   MDBRow,
   MDBCol,
   MDBIcon,
-  MDBBtn,
   MDBView,
   MDBContainer,
   MDBCard, MDBCardBody, MDBCardText,
-  MDBInput,
   MDBAnimation,
   MDBDropdown, MDBDropdownToggle, MDBDropdownMenu, MDBDropdownItem, 
 } from "mdbreact";
@@ -64,16 +64,16 @@ class ClassicFormPage extends React.Component {
                 >
                 <MDBNavbarNav left>
                   <MDBNavItem active>
-                    <MDBNavLink to="#!">Contact</MDBNavLink>
+                    <MDBNavLink to={'/contact'}>Contact</MDBNavLink>
                   </MDBNavItem>
                   <MDBNavItem>
-                    <MDBNavLink to="#!">Compétences</MDBNavLink>
+                    <MDBNavLink to="/competence">Compétences</MDBNavLink>
                   </MDBNavItem>
                   <MDBNavItem>
-                    <MDBNavLink to="#!">Expérience</MDBNavLink>
+                    <MDBNavLink to="/experience">Expérience</MDBNavLink>
                   </MDBNavItem>
                   <MDBNavItem>
-                    <MDBNavLink to="#!">Formation</MDBNavLink>
+                    <MDBNavLink to="/formation">Formation</MDBNavLink>
                   </MDBNavItem>
                 </MDBNavbarNav>
 
@@ -127,10 +127,9 @@ class ClassicFormPage extends React.Component {
                   </h1>
                   <hr className="hr-light" />
                   <h6 className="mb-4">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                    Rem repellendus quasi fuga nesciunt dolorum nulla magnam
-                    veniam sapiente, fugiat! Commodi sequi non animi ea dolor
-                    molestiae, quisquam iste, maiores. Nulla.
+                    Ayant obtenu un titre professionnel (RNCP) de niveau 3 (BTS/DUT) 
+                    de développeur/se Web et Web mobile suite à une réorientation de carrière, 
+                    je suis à la recherche d'une première expérience en entreprise afin d'y faire mes preuves.
                   </h6>
                 </MDBAnimation>
 
@@ -145,8 +144,9 @@ class ClassicFormPage extends React.Component {
                         <hr className="hr-light" />
 
                         <MDBCardText className="white-text">
-                        Sed ut perspiciatis unde omnis iste natus sit voluptatem
-                        accusantium doloremque laudantium, totam rem aperiam.{' '}
+                        <p><MDBIcon icon="birthday-cake" /> 20/11/1996 - 23ans</p>
+                        <p><MDBIcon icon="envelope" /> lmargauxgo@aol.com</p>
+                        <p><MDBIcon icon="car" /> Permis B + voiture</p>
                         </MDBCardText>
 
                         <div className="text-center mt-4 black-text">
@@ -185,21 +185,6 @@ class ClassicFormPage extends React.Component {
           </MDBMask>
         </MDBView>
 
-        <MDBContainer>
-          <MDBRow className="py-5">
-            <MDBCol md="12" className="text-center">
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
-                in reprehenderit in voluptate velit esse cillum dolore eu fugiat
-                nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-                sunt in culpa qui officia deserunt mollit anim id est laborum.
-              </p>
-            </MDBCol>
-          </MDBRow>
-        </MDBContainer>
       </div>
     );
   }

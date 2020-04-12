@@ -1,17 +1,17 @@
-import React, { Component } from "react";
-import { MDBBtn, MDBCol, MDBContainer, MDBRow } from "mdbreact";
+import React from "react";
 import "./index.css";
+import { BrowserRouter as Router, Route } from "react-router-dom";
+import Routes from "./Routes";
+
 import Navbar from "./components/NavBar/navBar";
 import "../src/components/NavBar/navBar.css"
 
-class App extends Component {
-  render() {
+function App() {
     return (
-      <div id="fond">
-      <Navbar/>
-      </div>
+      <Router>
+        <Route path="/" exact component={Navbar} />
+      </Router>
     );
   }
-}
 
 export default App;
