@@ -1,6 +1,8 @@
 import React from "react";
 import { BrowserRouter as Router } from "react-router-dom";
 
+import Contact from "../Contact/contact";
+
 import {
   MDBNavbar, MDBNavbarBrand, MDBNavbarNav, MDBNavItem, MDBNavLink, MDBNavbarToggler,
   MDBCollapse,
@@ -111,7 +113,7 @@ class ClassicFormPage extends React.Component {
 
         <MDBView>
           <MDBMask className="d-flex justify-content-center align-items-center gradient">
-
+            <Contact />
           </MDBMask>
         </MDBView>
 
