@@ -1,16 +1,16 @@
-import React from "react";
-import { Route, Router } from "react-router-dom";
+import React, { Component } from "react";
+import { BrowserRouter as Router, Route } from "react-router-dom";
+import RoutesList from "./RoutesList";
 
-//Contact
-import contact from "./components/Contact/contact";
+import Navbar from "./components/NavBar/navBar";
 
 class Routes extends React.Component {
     render() {
         return(
             <Router>
-            <div>
-              <Route exact path="/" component={contact}></Route>
-              {/*<Route exact path="/character" component={}></Route>*/}
+            <div >
+                <Navbar />
+                <RoutesList />
             </div>
           </Router>
         )
