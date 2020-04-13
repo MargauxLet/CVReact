@@ -2,7 +2,7 @@ import React from "react";
 import { BrowserRouter as Router, Route } from "react-router-dom";
 
 //Contact
-import contact from "./components/Contact/contact";
+import contact from "./contact";
 
 class RoutesList extends React.Component {
     render() {

@@ -1,7 +1,7 @@
 import React from "react";
 import { BrowserRouter as Router } from "react-router-dom";
 
-import Contact from "../Contact/contact";
+import Contact from "./contact";
 
 import {
   MDBNavbar, MDBNavbarBrand, MDBNavbarNav, MDBNavItem, MDBNavLink, MDBNavbarToggler,
@@ -13,8 +13,8 @@ import {
   MDBDropdown, MDBDropdownToggle, MDBDropdownMenu, MDBDropdownItem, 
 } from "mdbreact";
 
-import "../../index.css";
-import picture from "../../pictures/IMG_6767.JPG";
+import "../index.css";
+import picture from "../pictures/IMG_6767.JPG";
 
 class ClassicFormPage extends React.Component {
   state = {

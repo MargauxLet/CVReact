@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import { BrowserRouter as Router, Route } from "react-router-dom";
 import RoutesList from "./RoutesList";
 
-import Navbar from "./components/NavBar/navBar";
+import Navbar from "./navBar";
 
 class Routes extends React.Component {
     render() {
