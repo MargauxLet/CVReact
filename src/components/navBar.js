@@ -1,14 +1,10 @@
 import React from "react";
 import { BrowserRouter as Router } from "react-router-dom";
 
-import Contact from "./contact";
-
 import {
   MDBNavbar, MDBNavbarBrand, MDBNavbarNav, MDBNavItem, MDBNavLink, MDBNavbarToggler,
   MDBCollapse,
-  MDBMask,
   MDBIcon,
-  MDBView,
   MDBContainer,
   MDBDropdown, MDBDropdownToggle, MDBDropdownMenu, MDBDropdownItem, 
 } from "mdbreact";
@@ -48,7 +44,7 @@ class ClassicFormPage extends React.Component {
               <MDBContainer>
 
                 <MDBNavbarBrand>
-                  <img alt="Ma photo" id="pic" src={picture} />
+                  <img id="pic" src={picture} />
                   <strong id="haut" className="white-text">MonCV</strong>
                 </MDBNavbarBrand>
 
@@ -110,12 +106,6 @@ class ClassicFormPage extends React.Component {
           </div>
 
         </Router>
-
-        <MDBView>
-          <MDBMask className="d-flex justify-content-center align-items-center gradient">
-            <Contact />
-          </MDBMask>
-        </MDBView>
 
       </div>
     );
