@@ -1,5 +1,4 @@
 import React from "react";
-import { BrowserRouter as Router } from "react-router-dom";
 
 import {
   MDBNavbar, MDBNavbarBrand, MDBNavbarNav, MDBNavItem, MDBNavLink, MDBNavbarToggler,
@@ -36,8 +35,6 @@ class ClassicFormPage extends React.Component {
       
       <div id="classicformpage">
 
-        <Router>
-
           <div>
             <MDBNavbar dark expand="md" fixed="top">
 
@@ -57,17 +54,17 @@ class ClassicFormPage extends React.Component {
                   navbar
                 >
                 <MDBNavbarNav left>
-                  <MDBNavItem active>
+                  <MDBNavItem>
                     <MDBNavLink to={'/contact'}>Contact</MDBNavLink>
                   </MDBNavItem>
                   <MDBNavItem>
-                    <MDBNavLink to="/competence">Compétences</MDBNavLink>
+                    <MDBNavLink to={'/competence'}>Compétences</MDBNavLink>
                   </MDBNavItem>
                   <MDBNavItem>
-                    <MDBNavLink to="/experience">Expérience</MDBNavLink>
+                    <MDBNavLink to={'/experience'}>Expérience</MDBNavLink>
                   </MDBNavItem>
                   <MDBNavItem>
-                    <MDBNavLink to="/formation">Formation</MDBNavLink>
+                    <MDBNavLink to={'/formation'}>Formation</MDBNavLink>
                   </MDBNavItem>
                 </MDBNavbarNav>
 
@@ -104,8 +101,6 @@ class ClassicFormPage extends React.Component {
             </MDBNavbar>
             {this.state.collapseID && overlay}
           </div>
-
-        </Router>
 
       </div>
     );
