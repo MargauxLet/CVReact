@@ -1,26 +1,27 @@
 import React from "react";
-import { BrowserRouter as Router, Route, Switch, Redirect } from "react-router-dom";
+import {Route, Switch} from "react-router-dom";
 
 import contact from "./contact";
 import competence from "./competence";
-
-import { createBrowserHistory } from "history";
-
-const customHistory = createBrowserHistory();
-
-const PathUnknown = () => (
-  <Redirect to="/" />
-)
+import experience from "./experience";
+import formation from "./formation";
 
 class RoutesList extends React.Component {
     render() {
         return(
-          <Switch history={customHistory}>
+          <Switch>
             {/*CONTACT*/}
             <Route path={"/contact"} component={contact} exact />
 
             {/*COMPETENCE*/}
             <Route path={"/competence"} component={competence} exact />
+
+            {/*EXPERIENCE*/}
+            <Route path={"/experience"} component={experience} exact />  
+
+            {/*FORMATION*/}
+            <Route path={"/formation"} component={formation} exact /> 
+
           </Switch>
         )
     }

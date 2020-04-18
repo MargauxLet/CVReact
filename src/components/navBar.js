@@ -32,77 +32,74 @@ class ClassicFormPage extends React.Component {
     );
 
     return (
-      
-      <div id="classicformpage">
 
-          <div>
-            <MDBNavbar dark expand="md" fixed="top">
+      <div>
+        <MDBNavbar dark expand="md" fixed="top">
 
-              <MDBContainer>
+          <MDBContainer>
 
-                <MDBNavbarBrand>
-                  <img id="pic" src={picture} />
-                  <strong id="haut" className="white-text">MonCV</strong>
-                </MDBNavbarBrand>
+            <MDBNavbarBrand>
+              <img id="pic" src={picture} />
+              <strong id="haut" className="white-text">MonCV</strong>
+            </MDBNavbarBrand>
 
-                <MDBNavbarToggler
-                  onClick={this.toggleCollapse("navbarCollapse")}
-                />
-                <MDBCollapse
-                  id="navbarCollapse"
-                  isOpen={this.state.collapseID}
-                  navbar
-                >
-                <MDBNavbarNav left>
-                  <MDBNavItem>
-                    <MDBNavLink to={'/contact'}>Contact</MDBNavLink>
-                  </MDBNavItem>
-                  <MDBNavItem>
-                    <MDBNavLink to={'/competence'}>Compétences</MDBNavLink>
-                  </MDBNavItem>
-                  <MDBNavItem>
-                    <MDBNavLink to={'/experience'}>Expérience</MDBNavLink>
-                  </MDBNavItem>
-                  <MDBNavItem>
-                    <MDBNavLink to={'/formation'}>Formation</MDBNavLink>
-                  </MDBNavItem>
-                </MDBNavbarNav>
+            <MDBNavbarToggler
+              onClick={this.toggleCollapse("navbarCollapse")}
+            />
+            <MDBCollapse
+              id="navbarCollapse"
+              isOpen={this.state.collapseID}
+              navbar
+            >
+            <MDBNavbarNav left>
+              <MDBNavItem>
+                <MDBNavLink to={'/contact'}>Contact</MDBNavLink>
+              </MDBNavItem>
+              <MDBNavItem>
+                <MDBNavLink to={'/competence'}>Compétences</MDBNavLink>
+              </MDBNavItem>
+              <MDBNavItem>
+                <MDBNavLink to={'/experience'}>Expérience</MDBNavLink>
+              </MDBNavItem>
+              <MDBNavItem>
+                <MDBNavLink to={'/formation'}>Formation</MDBNavLink>
+              </MDBNavItem>
+            </MDBNavbarNav>
 
-                <MDBNavbarNav right>
-                  <MDBNavItem>
-                    <MDBNavLink className="waves-effect waves-light" to="#!">
-                      <MDBIcon fab icon="twitter" />
-                    </MDBNavLink>
-                  </MDBNavItem>
-                  <MDBNavItem>
-                    <MDBNavLink className="waves-effect waves-light" to="#!">
-                      <MDBIcon fab icon="google-plus-g" />
-                    </MDBNavLink>
-                  </MDBNavItem>
-                  <MDBNavItem>
-                    <MDBDropdown>
-                      <MDBDropdownToggle nav caret>
-                        <MDBIcon icon="user" />
-                      </MDBDropdownToggle>
-                      <MDBDropdownMenu className="dropdown-default">
-                        <MDBDropdownItem href="#!">Action</MDBDropdownItem>
-                        <MDBDropdownItem href="#!">Another Action</MDBDropdownItem>
-                        <MDBDropdownItem href="#!">Something else here</MDBDropdownItem>
-                        <MDBDropdownItem href="#!">Something else here</MDBDropdownItem>
-                      </MDBDropdownMenu>
-                    </MDBDropdown>
-                  </MDBNavItem>
-                </MDBNavbarNav>
+            <MDBNavbarNav right>
+              <MDBNavItem>
+                <MDBNavLink className="waves-effect waves-light" to="#!">
+                  <MDBIcon fab icon="twitter" />
+                </MDBNavLink>
+              </MDBNavItem>
+              <MDBNavItem>
+                <MDBNavLink className="waves-effect waves-light" to="#!">
+                  <MDBIcon fab icon="google-plus-g" />
+                </MDBNavLink>
+              </MDBNavItem>
+              <MDBNavItem>
+                <MDBDropdown>
+                  <MDBDropdownToggle nav caret>
+                    <MDBIcon icon="user" />
+                  </MDBDropdownToggle>
+                  <MDBDropdownMenu className="dropdown-default">
+                    <MDBDropdownItem href="#!">Action</MDBDropdownItem>
+                    <MDBDropdownItem href="#!">Another Action</MDBDropdownItem>
+                    <MDBDropdownItem href="#!">Something else here</MDBDropdownItem>
+                    <MDBDropdownItem href="#!">Something else here</MDBDropdownItem>
+                  </MDBDropdownMenu>
+                </MDBDropdown>
+              </MDBNavItem>
+            </MDBNavbarNav>
 
-                </MDBCollapse>
+            </MDBCollapse>
 
-              </MDBContainer>
+          </MDBContainer>
 
-            </MDBNavbar>
-            {this.state.collapseID && overlay}
-          </div>
-
+        </MDBNavbar>
+        {this.state.collapseID && overlay}
       </div>
+
     );
   }
 }
