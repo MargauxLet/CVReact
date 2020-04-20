@@ -1,3 +1,4 @@
+/* FOND & MASK */
 #classicformpage .view {
     background-image: url("./pictures/coding-926242_1920.jpg");
     background-repeat: no-repeat;
@@ -24,33 +25,7 @@
     );
   }
   
-  #classicformpage .card {
-    background-color: rgba(126, 123, 215, 0.2);
-  }
-  
-  #classicformpage h6 {
-    line-height: 1.7;
-  }
-  
-  #classicformpage .navbar {
-    transition: background 0.5s ease-in-out, padding 0.5s ease-in-out;
-  }
-  
-  #classicformpage .top-nav-collapse {
-    background: #424f95 !important;
-  }
-  
-  @media (max-width: 768px) {
-    #classicformpage .navbar:not(.top-nav-collapse) {
-      background: #424f95 !important;
-    }
-  }
-  
-  #classicformpage label {
-    color: #fff !important;
-  }
-  
-  /* MA PHOTO */
+  /* NAVBAR */
   #pic{
     overflow:hidden;
     -webkit-border-radius:50px;
@@ -65,12 +40,38 @@
   transform: scale(1.3);
   }
   
-  /* "Mon CV" */
   #haut{
     padding-left: 25px;
   }
 
-  /* PAS DE FOND DANS LES CARTES */
+  #classicformpage .top-nav-collapse {
+    background: #424f95 !important;
+  }
+  
+  @media (max-width: 768px) {
+    #classicformpage .navbar:not(.top-nav-collapse) {
+      background: #424f95 !important;
+    }
+  }
+
+  /* CONTACT */
+  #classicformpage .card {
+    background-color: rgba(126, 123, 215, 0.2);
+  }
+  
+  #classicformpage h6 {
+    line-height: 1.7;
+  }
+  
+  #classicformpage .navbar {
+    transition: background 0.5s ease-in-out, padding 0.5s ease-in-out;
+  }
+  
+  #classicformpage label {
+    color: #fff !important;
+  }
+
+  /* COMPETENCES */
   #noFond .view{
     background-image: none;
     height: auto;
@@ -81,4 +82,9 @@
   }
   #noFond .card-body{
     height: 310px;
+  }
+
+  /* EXPERIENCE */
+  #exp{
+    padding: 100px;
   }

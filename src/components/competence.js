@@ -1,6 +1,7 @@
 import React from "react";
 
-import { MDBCarousel, 
+import { MDBAnimation,
+  MDBCarousel, 
   MDBCarouselInner, 
   MDBCarouselItem, 
   MDBContainer, 
@@ -24,6 +25,7 @@ const MultiCarouselPage = () => {
             <MDBRow>
 
               <MDBCarouselItem itemId="1">
+              <MDBAnimation type="fadeInLeft" delay=".3s">
                 <MDBCol md="4">
                   <MDBCard className="mb-2">
                     <MDBCardImage className="img-fluid" src={require('../pictures/HTML.png')} />
@@ -60,6 +62,7 @@ const MultiCarouselPage = () => {
                     </MDBCardBody>
                   </MDBCard>
                 </MDBCol>
+                </MDBAnimation>
               </MDBCarouselItem>
 
               <MDBCarouselItem itemId="2">
