@@ -10,6 +10,9 @@ class RoutesList extends React.Component {
     render() {
         return(
           <Switch>
+            {/*ACCUEIL*/}
+           
+
             {/*CONTACT*/}
             <Route path={"/contact"} component={contact} exact />
 

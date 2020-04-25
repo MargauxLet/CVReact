@@ -12,11 +12,11 @@ const TimelinePage = () => {
 
   return (
     
-    <MDBTable scrollY maxHeight="100vh" id="scrollbar">
+    <MDBTable scrollY maxHeight="100vh" id="scrollbar" >
         <div id="exp">
             <MDBAnimation type="zoomIn" delay=".3s">
                 <MDBTimeline >
-                    <MDBTimelineStep colorful hoverable color="cyan" label=" ">
+                    <MDBTimelineStep colorful hoverable color="blue-gradient" label=" ">
                         <img src={require('../pictures/insy2s.PNG')} className="img-fluid" alt="" />
                         <h4 className="font-weight-bold p-4 mb-0">
                         INSY2S Lille - Stagiaire développement web 
@@ -29,8 +29,8 @@ const TimelinePage = () => {
                         Utilisation de technologies Front et Back-end comme JHipster, React et SpringBoot.
                         </p>
                     </MDBTimelineStep>
-                    <MDBTimelineStep colorful inverted hoverable color="cyan" label=" ">
-                        <img src="https://mdbootstrap.com/img/Photos/Slides/img%20(129).jpg" className="img-fluid" alt="" />
+                    <MDBTimelineStep colorful inverted hoverable color="blue-gradient" label=" ">
+                        <img src={require('../pictures/intermarche.jpg')} className="img-fluid" alt="" />
                         <h4 className="font-weight-bold p-4 mb-0">
                         Intermarché Pont ste Maxence - Hotesse de caisse 
                         </h4>
@@ -41,8 +41,8 @@ const TimelinePage = () => {
                         Remplacement en tant qu'hotesse de caisse. 
                         </p>
                     </MDBTimelineStep>
-                    <MDBTimelineStep colorful hoverable color="cyan" label=" ">
-                        <img src="https://mdbootstrap.com/img/Photos/Slides/img%20(131).jpg" className="img-fluid" alt="" />
+                    <MDBTimelineStep colorful hoverable color="blue-gradient" label=" ">
+                        <img src={require('../pictures/Conforama.PNG')} className="img-fluid" alt="" />
                         <h4 className="font-weight-bold p-4 mb-0">
                         Conforama Compiègne - Stagiaire rayon décoration
                         </h4>
@@ -54,13 +54,13 @@ const TimelinePage = () => {
                         réalisation d'un mémoire sur l’amélioration de la rentabilité d’un rayon.
                         </p>
                     </MDBTimelineStep>
-                    <MDBTimelineStep colorful inverted hoverable color="cyan" label=" ">
-                        <img src="https://mdbootstrap.com/img/Photos/Slides/img%20(125).jpg" className="img-fluid" alt="" />
+                    <MDBTimelineStep colorful inverted hoverable color="blue-gradient" label=" ">
+                        <img src={require('../pictures/boulanger.PNG')} className="img-fluid" alt="" />
                         <h4 className="font-weight-bold p-4 mb-0">
-                        Boulanger Compiègne - Stagiaire rayon confort (14 semaines)
+                        Boulanger Compiègne - Stagiaire rayon confort 
                         </h4>
                         <p className="text-muted px-4 mb-0">
-                        <MDBIcon icon="clock" /> 2014
+                        <MDBIcon icon="clock" /> 2015-2017 (14 semaines)
                         </p>
                         <p className="mb-0 p-4">
                         Vente, animation, conseils aux clients, préparations de commandes, facing, étiquetage, réapprovisionnement 
@@ -68,8 +68,8 @@ const TimelinePage = () => {
                         en fin de vie.
                         </p>
                     </MDBTimelineStep>
-                    <MDBTimelineStep colorful hoverable color="cyan" label=" ">
-                        <img src="https://mdbootstrap.com/img/Photos/Slides/img%20(144).jpg" className="img-fluid" alt="" />
+                    <MDBTimelineStep colorful hoverable color="blue-gradient" label=" ">
+                        <img src={require('../pictures/vandesype.PNG')} className="img-fluid" alt="" />
                         <h4 className="font-weight-bold p-4 mb-0">
                         Fleuriste-horticulture Van de Sype Estrées st Denis - Stagiaire
                         </h4>

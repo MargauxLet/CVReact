@@ -87,10 +87,11 @@
   /* EXPERIENCE */
   #exp{
     padding-top: 10vh;
-    padding-left: 20vh;
-    padding-right: 20vh;
+    padding-left: 30vh;
+    padding-right: 30vh;
   }
 
-#scrollbar{
-  scrollbar-width: 90%;
-}
+  #exp img{
+    width: 100%;
+    height: 50%;
+  }
