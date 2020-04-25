@@ -90,3 +90,7 @@
     padding-left: 20vh;
     padding-right: 20vh;
   }
+
+#scrollbar{
+  scrollbar-width: 90%;
+}

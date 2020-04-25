@@ -25,7 +25,7 @@ class Contact extends React.Component {
             </h1>
             <hr className="hr-light" />
             <h6 className="mb-4">
-              Ayant obtenu un titre professionnel (RNCP) de niveau 3 (BTS/DUT) 
+              Ayant obtenu un titre professionnel (inscrit au RNCP) de niveau 5 (BTS/DUT),  
               de développeur/se Web et Web mobile suite à une réorientation de carrière, 
               je suis à la recherche d'une première expérience en entreprise afin d'y faire mes preuves.
             </h6>
