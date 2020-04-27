@@ -12,7 +12,7 @@ const TimelinePage = () => {
 
   return (
     
-    <MDBTable scrollY maxHeight="100vh" id="scrollbar" >
+    <MDBTable scrollY maxHeight="100vh" >
         <div id="exp">
             <MDBAnimation type="zoomIn" delay=".3s">
                 <MDBTimeline >
