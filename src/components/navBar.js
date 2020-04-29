@@ -1,107 +1,119 @@
-import React from "react";
+import React, { Component } from "react";
+import { Link } from "react-router-dom";
 
-import {
-  MDBNavbar, MDBNavbarBrand, MDBNavbarNav, MDBNavItem, MDBNavLink, MDBNavbarToggler,
-  MDBCollapse,
+import { 
+  MDBMask, 
+  MDBView,
   MDBIcon,
-  MDBContainer,
-  MDBDropdown, MDBDropdownToggle, MDBDropdownMenu, MDBDropdownItem, 
+  MDBNavbar, MDBNavbarBrand, MDBNavbarNav, MDBNavItem, MDBNavLink, MDBNavbarToggler, 
+  MDBCollapse,  
+  MDBTabContent, MDBTabPane,
 } from "mdbreact";
 
-import "../index.css";
+import Competence from "./competence";
+import Formation from "./formation";
+import Contact from "./contact";
+import Experience from "./experience";
+
 import picture from "../pictures/IMG_6767.JPG";
+import "../index.css";
 
-class ClassicFormPage extends React.Component {
-  state = {
-    collapseID: ""
-  };
+class NavbarPage extends Component {
+state = {
+    activeItem: "1"
+}
 
-  toggleCollapse = collapseID => () =>
-    this.setState(prevState => ({
-      collapseID: prevState.collapseID !== collapseID ? collapseID : ""
-    }));
+toggle = tab => () => {
+    if (this.state.activeItem !== tab) {
+    this.setState({
+    activeItem: tab
+    });
+    }
+}
 
-  render() {
+render() {
+  return (
+    <MDBView>
+      <div className="container-area"></div>
+      <header>
+        <MDBNavbar dark expand="md">
 
-    const overlay = (
-      <div
-        id="sidenav-overlay"
-        style={{ backgroundColor: "transparent" }}
-        onClick={this.toggleCollapse("navbarCollapse")}
-      />
-    );
+          <MDBNavbarBrand>
+            <MDBView hover zoom>
+              <div id="haut">
+                <img src={picture} className="img-fluid" alt="" />
+                <MDBMask className="flex-center">
+                  <strong className="white-text">MonCV</strong>
+                </MDBMask>
+              </div>  
+            </MDBView>
+          </MDBNavbarBrand>
 
-    return (
+          <MDBNavbarToggler onClick={this.toggleCollapse} />
 
-      <div>
-        <MDBNavbar dark expand="md" fixed="top">
+          <MDBCollapse id="navbarCollapse3" isOpen={this.state.isOpen} navbar>
 
-          <MDBContainer>
-
-            <MDBNavbarBrand>
-              <img id="pic" src={picture} />
-              <strong id="haut" className="white-text">MonCV</strong>
-            </MDBNavbarBrand>
-
-            <MDBNavbarToggler
-              onClick={this.toggleCollapse("navbarCollapse")}
-            />
-            <MDBCollapse
-              id="navbarCollapse"
-              isOpen={this.state.collapseID}
-              navbar
-            >
             <MDBNavbarNav left>
               <MDBNavItem>
-                <MDBNavLink to={'/contact'}>Contact</MDBNavLink>
+                <MDBNavLink link to="#"
+                active={this.state.activeItem === "1"}
+                onClick={this.toggle("1")}
+                role="tab">Contact</MDBNavLink>
               </MDBNavItem>
               <MDBNavItem>
-                <MDBNavLink to={'/competence'}>Compétences</MDBNavLink>
+                  <MDBNavLink link to="#!"
+                  active={this.state.activeItem === "2"}
+                  onClick={this.toggle("2")}
+                  role="tab">Compétences</MDBNavLink>
               </MDBNavItem>
               <MDBNavItem>
-                <MDBNavLink to={'/experience'}>Expérience</MDBNavLink>
+                  <MDBNavLink link to="#!"
+                  active={this.state.activeItem === "3"}
+                  onClick={this.toggle("3")}
+                  role="tab">Expériences</MDBNavLink>
               </MDBNavItem>
               <MDBNavItem>
-                <MDBNavLink to={'/formation'}>Formation</MDBNavLink>
+                  <MDBNavLink link to="#!"
+                  active={this.state.activeItem === "4"}
+                  onClick={this.toggle("4")}
+                  role="tab">Formation</MDBNavLink>
               </MDBNavItem>
             </MDBNavbarNav>
 
             <MDBNavbarNav right>
               <MDBNavItem>
-                <MDBNavLink className="waves-effect waves-light" to="#!">
-                  <MDBIcon fab icon="twitter" />
+                <MDBNavLink link to="#"
+                  active={this.state.activeItem === "1"}
+                  onClick={this.toggle("1")}
+                  role="tab">
+                    <MDBIcon icon="home" className="white-text"/>
                 </MDBNavLink>
-              </MDBNavItem>
-              <MDBNavItem>
-                <MDBNavLink className="waves-effect waves-light" to="#!">
-                  <MDBIcon fab icon="google-plus-g" />
-                </MDBNavLink>
-              </MDBNavItem>
-              <MDBNavItem>
-                <MDBDropdown>
-                  <MDBDropdownToggle nav caret>
-                    <MDBIcon icon="user" />
-                  </MDBDropdownToggle>
-                  <MDBDropdownMenu className="dropdown-default">
-                    <MDBDropdownItem href="#!">Action</MDBDropdownItem>
-                    <MDBDropdownItem href="#!">Another Action</MDBDropdownItem>
-                    <MDBDropdownItem href="#!">Something else here</MDBDropdownItem>
-                    <MDBDropdownItem href="#!">Something else here</MDBDropdownItem>
-                  </MDBDropdownMenu>
-                </MDBDropdown>
               </MDBNavItem>
             </MDBNavbarNav>
-
-            </MDBCollapse>
-
-          </MDBContainer>
-
+          </MDBCollapse>
         </MDBNavbar>
-        {this.state.collapseID && overlay}
-      </div>
+      </header>
 
+      <main>
+        <MDBTabContent className="card" activeItem={this.state.activeItem}>
+            <MDBTabPane tabId="1" role="tabpanel">
+              <Contact />
+            </MDBTabPane>
+            <MDBTabPane tabId="2" role="tabpanel">
+              <Competence />
+            </MDBTabPane>
+            <MDBTabPane tabId="3" role="tabpanel">
+              <Experience />
+            </MDBTabPane>
+            <MDBTabPane tabId="4" role="tabpanel">
+              <Formation />
+            </MDBTabPane>
+        </MDBTabContent>
+      </main>
+
+    </MDBView>
     );
   }
 }
 
-export default ClassicFormPage;
+export default NavbarPage;

@@ -66,6 +66,7 @@ const MultiCarouselPage = () => {
               </MDBCarouselItem>
 
               <MDBCarouselItem itemId="2">
+              <MDBAnimation type="fadeInLeft" delay=".3s">
                 <MDBCol md="4">
                   <MDBCard className="mb-2">
                     <MDBCardImage className="img-fluid" src={require('../pictures/bootstrap.jpg')} />
@@ -96,9 +97,11 @@ const MultiCarouselPage = () => {
                     </MDBCardBody>
                   </MDBCard>
                 </MDBCol>
+                </MDBAnimation>
               </MDBCarouselItem>
 
               <MDBCarouselItem itemId="3">
+              <MDBAnimation type="fadeInLeft" delay=".3s">
                 <MDBCol md="4">
                   <MDBCard className="mb-2">
                     <MDBCardImage className="img-fluid" src={require('../pictures/react.png')} />
@@ -129,9 +132,11 @@ const MultiCarouselPage = () => {
                     </MDBCardBody>
                   </MDBCard>
                 </MDBCol>
+                </MDBAnimation>
               </MDBCarouselItem>
 
               <MDBCarouselItem itemId="4">
+              <MDBAnimation type="fadeInLeft" delay=".3s">
                 <MDBCol md="4">
                   <MDBCard className="mb-2">
                     <MDBCardImage className="img-fluid" src={require('../pictures/office.jpg')} />
@@ -166,9 +171,11 @@ const MultiCarouselPage = () => {
                     </MDBCardBody>
                   </MDBCard>
                 </MDBCol>
+                </MDBAnimation>
               </MDBCarouselItem>
 
               <MDBCarouselItem itemId="5">
+              <MDBAnimation type="fadeInLeft" delay=".3s">
                 <MDBCol md="4">
                   <MDBCard className="mb-2">
                     <MDBCardImage className="img-fluid" src={require('../pictures/wamp-xampp.png')} />
@@ -205,6 +212,7 @@ const MultiCarouselPage = () => {
                     </MDBCardBody>
                   </MDBCard>
                 </MDBCol>
+                </MDBAnimation>
               </MDBCarouselItem>
 
             </MDBRow>

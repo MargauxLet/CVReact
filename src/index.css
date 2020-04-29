@@ -1,32 +1,17 @@
-/* FOND & MASK */
-#classicformpage .view {
-    background-image: url("./pictures/coding-926242_1920.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center center;
-    height: 100vh;
-  }
-  
-  #classicformpage .gradient {
-    background: -webkit-linear-gradient(
-      45deg,
-      rgba(0, 0, 0, 0.7),
-      rgba(72, 15, 144, 0.4) 100%
-    );
-    background: -webkit-gradient(
-      linear,
-      45deg,
-      from(rgba(0, 0, 0, 0.7), rgba(72, 15, 144, 0.4) 100%)
-    );
-    background: linear-gradient(
-      45deg,
-      rgba(0, 0, 0, 0.7),
-      rgba(72, 15, 144, 0.4) 100%
-    );
-  }
-  
-  /* NAVBAR */
-  #pic{
+/* FOND */
+.container-area{
+  overflow: hidden;
+  position: fixed;
+  top:0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-image: url("../src/pictures/coding-926242_1920.jpg");
+  background-size: cover;
+}
+
+/* NAVBAR */
+#haut img{
     overflow:hidden;
     -webkit-border-radius:50px;
     -moz-border-radius:50px;
@@ -35,67 +20,59 @@
     height:90px;
   }
   
-  #pic:hover {
-    -webkit-transform: scale(1.3);
-  transform: scale(1.3);
-  }
+header {
+  height: 20%;
+}
+
+.navbar{
+  padding-right: 20%;
+  padding-left: 20%;
+}
+
+/* MAIN */
+main .card {
+  background-color: transparent;
+}
+#classic-card{
+  background-color: rgba(126, 123, 215, 0.3);
+}
+h6{
+  line-height: 1.7;
+}
   
-  #haut{
-    padding-left: 25px;
-  }
+/* COMPETENCES */
+#noFond{
+  color: white;
+}
 
-  #classicformpage .top-nav-collapse {
-    background: #424f95 !important;
-  }
-  
-  @media (max-width: 768px) {
-    #classicformpage .navbar:not(.top-nav-collapse) {
-      background: #424f95 !important;
-    }
-  }
+#noFond .card-text{
+  color: white;
+}
 
-  /* CONTACT */
-  #classicformpage .card {
-    background-color: rgba(126, 123, 215, 0.2);
-  }
-  
-  #classicformpage h6 {
-    line-height: 1.7;
-  }
-  
-  #classicformpage .navbar {
-    transition: background 0.5s ease-in-out, padding 0.5s ease-in-out;
-  }
-  
-  #classicformpage label {
-    color: #fff !important;
-  }
+#noFond .card{
+  background-color: rgba(126, 123, 215, 0.1);
+}
 
-  /* COMPETENCES */
-  #noFond .view{
-    background-image: none;
-    height: auto;
-  }
+#noFond .card-body{
+  height: 310px;
+}
 
-  #noFond .card{
-    background-color: rgba(255, 255, 255, 0.774);
-  }
-  #noFond .card-body{
-    height: 310px;
-  }
+/* EXPERIENCE */
+#exp{
+  padding-left: 20vh;
+  padding-right: 20vh;
+}
 
-  /* EXPERIENCE */
-  #exp{
-    padding-top: 10vh;
-    padding-left: 30vh;
-    padding-right: 30vh;
-  }
+#exp img{
+  width: 100%;
+  height: 40%;
+}
 
-  #exp img{
-    width: 100%;
-    height: 40%;
-  }
-  .table-wrapper-scroll-y {
-    margin-top: 15%;
-    padding-bottom: 10%;
-  }
+#exp .step-content{
+  background-color: rgba(126, 123, 215, 0.3);
+}
+
+/* CONTACT */
+.card-body{
+  background-color: rgba(126, 123, 215, 0.3);
+}

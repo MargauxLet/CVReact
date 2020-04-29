@@ -2,6 +2,7 @@ import React from "react";
 import "../index.css";
 
 import {
+  MDBMask,
   MDBRow,
   MDBCol,
   MDBIcon,
@@ -15,20 +16,19 @@ class Contact extends React.Component {
     return(
       <MDBContainer>
         <MDBRow>
-          <MDBAnimation
-            type="fadeInLeft"
-            delay=".3s"
-            className="white-text text-center text-md-left col-md-6 mt-xl-5 mb-5"
-          >
-            <h1 className="h1-responsive font-weight-bold">
-            Développeuse Web junior
-            </h1>
-            <hr className="hr-light" />
-            <h6 className="mb-4">
-              Ayant obtenu un titre professionnel (inscrit au RNCP) de niveau 5 (BTS/DUT),  
-              de développeur/se Web et Web mobile suite à une réorientation de carrière, 
-              je suis à la recherche d'une première expérience en entreprise afin d'y faire mes preuves.
-            </h6>
+          <MDBAnimation type="fadeInLeft" delay=".3s"
+            className="text-center text-md-left col-md-6 mt-xl-5 mb-5" >
+              <MDBCardBody className="white-text">
+                <h1 className="h1-responsive font-weight-bold">
+                Développeuse Web junior
+                </h1>
+                <hr className="hr-light" />
+                <h6 className="mb-4">
+                  Ayant obtenu un titre professionnel (inscrit au RNCP) de niveau 5 (BTS/DUT),  
+                  de développeur/se Web et Web mobile suite à une réorientation de carrière, 
+                  je suis à la recherche d'une première expérience en entreprise afin d'y faire mes preuves.
+                </h6>
+            </MDBCardBody>
           </MDBAnimation>
 
           <MDBCol md="6" xl="5" className="mb-4">
