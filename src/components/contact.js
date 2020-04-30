@@ -49,27 +49,29 @@ class Contact extends React.Component {
                   <div className="text-center mt-4 black-text">
                     <hr className="hr-light" />
                     <div className="text-center d-flex justify-content-center white-label">
-                      <a href="https://www.linkedin.com/in/margaux-letellier-a0447517b/" className="p-2 m-2">
-                        <MDBIcon
-                          fab
-                          icon="linkedin"
-                          className="white-text"
-                        />
-                      </a>
-                      <a href="https://github.com/MargauxLet" className="p-2 m-2">
-                        <MDBIcon
-                          fab
-                          icon="github"
-                          className="white-text"
-                        />
-                      </a>
-                      <a href="https://gitlab.com/MargauxLet" className="p-2 m-2">
-                        <MDBIcon
-                          fab
-                          icon="gitlab"
-                          className="white-text"
-                        />
-                      </a>
+                      <p className="white-text" id="blabla">Accédez à mon :
+                        <a href="https://www.linkedin.com/in/margaux-letellier-a0447517b/" className="p-2 m-2">
+                          <MDBIcon
+                            fab
+                            icon="linkedin"
+                            className="white-text"
+                          />
+                        </a>
+                        <a href="https://github.com/MargauxLet" className="p-2 m-2">
+                          <MDBIcon
+                            fab
+                            icon="github"
+                            className="white-text"
+                          />
+                        </a>
+                        <a href="https://gitlab.com/MargauxLet" className="p-2 m-2">
+                          <MDBIcon
+                            fab
+                            icon="gitlab"
+                            className="white-text"
+                          />
+                        </a>
+                      </p>
                     </div>
                   </div>
 

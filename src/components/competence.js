@@ -20,7 +20,7 @@ const MultiCarouselPage = () => {
   return (
     <div id="noFond">
       <MDBContainer>
-        <MDBCarousel activeItem={1} length={5} slide={true} showControls={false} showIndicators={true} multiItem>
+        <MDBCarousel activeItem={1} length={5} slide={true} showControls={true} showIndicators={true} multiItem interval={30000}>
           <MDBCarouselInner>
             <MDBRow>
 

@@ -37,12 +37,13 @@ render() {
                       <MDBCollapseHeader
                         onClick={this.toggleCollapse("collapse1")}
                         className="p-0 z-depth-1"
-                        tag="h5"
+                        tag="h6"
                         tagClassName="text-uppercase white-text mb-0 d-flex justify-content-start align-items-center">
                         <div className="d-flex justify-content-center align-items-center mr-4" class="fd-icon" >
                           <MDBIcon icon="laptop-code" size="2x" className="m-3 white-text " />
                         </div>
                         Formation Qualifiante Développeur Web et Web Mobile 
+                        <MDBIcon icon="caret-down" />
                       </MDBCollapseHeader>
 
                       <MDBCollapse id="collapse1" isOpen={this.state.collapseID}>
@@ -57,12 +58,13 @@ render() {
                       <MDBCollapseHeader
                         onClick={this.toggleCollapse("collapse2")}
                         className="p-0 z-depth-1"
-                        tag="h5"
+                        tag="h6"
                         tagClassName="text-uppercase white-text mb-0 d-flex justify-content-start align-items-center" >
                         <div className="d-flex justify-content-center align-items-center mr-4" class="fd-icon">
                           <MDBIcon icon="suitcase" size="2x" className="m-3 white-text" />
                         </div>
                         Licence professionnelle Mention Commerce 
+                        <MDBIcon icon="caret-down" />
                       </MDBCollapseHeader>
 
                       <MDBCollapse id="collapse2" isOpen={this.state.collapseID}>
@@ -80,12 +82,13 @@ render() {
                       <MDBCollapseHeader
                         onClick={this.toggleCollapse("collapse3")}
                         className="p-0 z-depth-1"
-                        tag="h5"
+                        tag="h6"
                         tagClassName="text-uppercase white-text mb-0 d-flex justify-content-start align-items-center">
                         <div className="d-flex justify-content-center align-items-center mr-4" class="fd-icon" >
                           <MDBIcon icon="suitcase" size="2x" className="m-3 white-text" />
                         </div>
                         BTS Management des Unités Commerciales
+                        <MDBIcon icon="caret-down" />
                       </MDBCollapseHeader>
 
                       <MDBCollapse id="collapse3" isOpen={this.state.collapseID}>
@@ -102,12 +105,13 @@ render() {
                       <MDBCollapseHeader
                         onClick={this.toggleCollapse("collapse4")}
                         className="p-0 z-depth-1"
-                        tag="h5"
+                        tag="h6"
                         tagClassName="text-uppercase white-text mb-0 d-flex justify-content-start align-items-center" >
                         <div className="d-flex justify-content-center align-items-center mr-4" class="fd-icon">
                           <MDBIcon icon="suitcase" size="2x" className="m-3 white-text" />
                         </div>
                         Baccalauréat STMG  
+                        <MDBIcon icon="caret-down" />
                       </MDBCollapseHeader>
 
                       <MDBCollapse id="collapse4" isOpen={this.state.collapseID}>
