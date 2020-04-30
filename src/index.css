@@ -59,13 +59,7 @@ h6{
 
 /* EXPERIENCE */
 #exp{
-  padding-left: 20vh;
-  padding-right: 20vh;
-}
-
-#exp img{
-  width: 100%;
-  height: 40%;
+  margin: auto;
 }
 
 #exp .step-content{
@@ -73,6 +67,6 @@ h6{
 }
 
 /* CONTACT */
-.card-body{
+#card1 .card-body{
   background-color: rgba(126, 123, 215, 0.3);
 }

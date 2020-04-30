@@ -24,9 +24,7 @@
 
 #login .card {
     background-color: rgba(126, 123, 215, 0.2);
-    max-width: 1000vh;
-    margin-left: 20%;
-    margin-right: 20%;
+    max-width: 700px;
 }
 
 #login h6 {

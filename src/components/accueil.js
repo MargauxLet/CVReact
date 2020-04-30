@@ -1,5 +1,5 @@
 import React from "react";
-import { BrowserRouter as Router, Route, Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 import { 
     MDBAvatar, 
@@ -15,7 +15,6 @@ import {
 } from "mdbreact";
 
 import "./accueil.css";
-import routes from "./routes";
 import picture from "../pictures/IMG_6767.JPG";
 
 class accueil extends React.Component {

@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import { Link } from "react-router-dom";
 
 import { 
   MDBMask, 
@@ -20,8 +19,14 @@ import "../index.css";
 
 class NavbarPage extends Component {
 state = {
-    activeItem: "1"
+    activeItem: "1",
+    collapseID: "",
 }
+
+toggleCollapse = collapseID => () =>
+this.setState(prevState => ({
+  collapseID: prevState.collapseID !== collapseID ? collapseID : ""
+}));
 
 toggle = tab => () => {
     if (this.state.activeItem !== tab) {
@@ -32,6 +37,15 @@ toggle = tab => () => {
 }
 
 render() {
+
+  const overlay = (
+    <div
+      id="sidenav-overlay"
+      style={{ backgroundColor: "transparent" }}
+      onClick={this.toggleCollapse("navbarCollapse")}
+    />
+  );
+
   return (
     <MDBView>
       <div className="container-area"></div>
@@ -49,45 +63,41 @@ render() {
             </MDBView>
           </MDBNavbarBrand>
 
-          <MDBNavbarToggler onClick={this.toggleCollapse} />
+          <MDBNavbarToggler onClick={this.toggleCollapse("navbarCollapse")} />
 
-          <MDBCollapse id="navbarCollapse3" isOpen={this.state.isOpen} navbar>
+          <MDBCollapse id="navbarCollapse" isOpen={this.state.collapseID} navbar>
 
             <MDBNavbarNav left>
               <MDBNavItem>
                 <MDBNavLink link to="#"
                 active={this.state.activeItem === "1"}
                 onClick={this.toggle("1")}
-                role="tab">Contact</MDBNavLink>
+                role="tab"><MDBIcon icon="address-card" /> Contact</MDBNavLink>
               </MDBNavItem>
               <MDBNavItem>
                   <MDBNavLink link to="#!"
                   active={this.state.activeItem === "2"}
                   onClick={this.toggle("2")}
-                  role="tab">Compétences</MDBNavLink>
+                  role="tab"><MDBIcon icon="book-open" /> Compétences</MDBNavLink>
               </MDBNavItem>
               <MDBNavItem>
                   <MDBNavLink link to="#!"
                   active={this.state.activeItem === "3"}
                   onClick={this.toggle("3")}
-                  role="tab">Expériences</MDBNavLink>
+                  role="tab"><MDBIcon icon="briefcase" /> Expériences</MDBNavLink>
               </MDBNavItem>
               <MDBNavItem>
                   <MDBNavLink link to="#!"
                   active={this.state.activeItem === "4"}
                   onClick={this.toggle("4")}
-                  role="tab">Formation</MDBNavLink>
+                  role="tab"><MDBIcon icon="graduation-cap" /> Formation</MDBNavLink>
               </MDBNavItem>
             </MDBNavbarNav>
 
             <MDBNavbarNav right>
               <MDBNavItem>
-                <MDBNavLink link to="#"
-                  active={this.state.activeItem === "1"}
-                  onClick={this.toggle("1")}
-                  role="tab">
-                    <MDBIcon icon="home" className="white-text"/>
-                </MDBNavLink>
+                <MDBNavLink link to="/">
+                    <MDBIcon icon="home" className="white-text"/> Accueil</MDBNavLink>
               </MDBNavItem>
             </MDBNavbarNav>
           </MDBCollapse>

@@ -2,7 +2,6 @@ import React from "react";
 import "../index.css";
 
 import {
-  MDBMask,
   MDBRow,
   MDBCol,
   MDBIcon,
@@ -15,7 +14,7 @@ class Contact extends React.Component {
   render() {
     return(
       <MDBContainer>
-        <MDBRow>
+        <MDBRow id="card1">
           <MDBAnimation type="fadeInLeft" delay=".3s"
             className="text-center text-md-left col-md-6 mt-xl-5 mb-5" >
               <MDBCardBody className="white-text">
