@@ -70,3 +70,17 @@ h6{
 #card1 .card-body{
   background-color: rgba(126, 123, 215, 0.3);
 }
+
+/* FORMATION */
+#form .card{
+  background-color: rgba(126, 123, 215, 0.3);
+}
+
+#form .fd-icon{
+  background-color: transparent;
+  min-width: 100px;
+}
+
+#form .card-header{
+  background-color: rgba(126, 123, 215, 0.8);
+}

@@ -7,6 +7,8 @@ import { MDBTimeline,
     MDBContainer
 } from "mdbreact";
 
+import BackToTop from "react-back-to-top-button";
+
 const TimelinePage = () => {
 
   return (
@@ -81,6 +83,13 @@ const TimelinePage = () => {
                 </MDBTimeline>
             </MDBAnimation>
         </div>  
+        <BackToTop
+        showOnScrollUp
+        showAt={100}
+        speed={1500}
+        easing="easeInOutQuint">
+        <MDBIcon icon="chevron-up" className="white-text" />
+      </BackToTop>
     </MDBContainer>
   );
 };
