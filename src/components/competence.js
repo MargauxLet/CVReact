@@ -23,7 +23,11 @@ const MultiCarouselPage = () => {
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
         <MDBCarousel activeItem={1} length={1} slide={true} showControls={false} showIndicators={false} multiItem interval={false}>
+=======
+        <MDBCarousel activeItem={1} length={5} slide={true} showControls={false} showIndicators={true} multiItem>
+>>>>>>> parent of b5f0e172... commit 5.1
 =======
         <MDBCarousel activeItem={1} length={5} slide={true} showControls={false} showIndicators={true} multiItem>
 >>>>>>> parent of b5f0e172... commit 5.1
