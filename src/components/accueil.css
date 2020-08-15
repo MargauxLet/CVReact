@@ -1,5 +1,5 @@
 #login .view {
-  background-image: url("../pictures/coding-926242_1920.jpg");
+  background-image: url("../pictures/fond.jpg");
   background-size: cover;
   height: 100vh;
 }
@@ -7,23 +7,23 @@
 #login .gradient {
     background: -webkit-linear-gradient(
       45deg,
-      rgba(0, 0, 0, 0.7),
-      rgba(72, 15, 144, 0.4) 100%
+      rgba(0, 0, 0, 0.829),
+      rgba(92, 69, 28, 0.4) 100%
     );
     background: -webkit-gradient(
       linear,
       45deg,
-      from(rgba(0, 0, 0, 0.7), rgba(72, 15, 144, 0.4) 100%)
+      from(rgba(0, 0, 0, 0.829), rgba(92, 69, 28, 0.4) 100%)
     );
     background: linear-gradient(
       45deg,
-      rgba(0, 0, 0, 0.7),
-      rgba(72, 15, 144, 0.4) 100%
+      rgba(0, 0, 0, 0.829),
+      rgba(92, 69, 28, 0.4) 100%
     );
 }
 
 #login .card {
-    background-color: rgba(126, 123, 215, 0.2);
+    background-color: rgba(0, 0, 0, 0.521);
     max-width: 700px;
 }
 

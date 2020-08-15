@@ -40,16 +40,16 @@ render() {
                         tag="h6"
                         tagClassName="text-uppercase white-text mb-0 d-flex justify-content-start align-items-center">
                         <div className="d-flex justify-content-center align-items-center mr-4" class="fd-icon" >
-                          <MDBIcon icon="laptop-code" size="2x" className="m-3 white-text " />
+                          <MDBIcon icon="check-circle" size="2x" className="m-3 white-text " />
                         </div>
-                        Formation Qualifiante Développeur Web et Web Mobile 
+                        Master Management et Gestion des Entreprises
                         <MDBIcon icon="caret-down" />
                       </MDBCollapseHeader>
 
                       <MDBCollapse id="collapse1" isOpen={this.state.collapseID}>
                         <MDBCardBody className="rgba-black-light white-text z-depth-1">
-                          <MDBIcon icon="calendar-alt" /> 2019-2020
-                          <p className="p-md-4 mb-0"> Centre Afpa – Beauvais (60) </p>
+                          <MDBIcon icon="calendar-alt" /> 2018-2020
+                          <p className="p-md-4 mb-0"> École nationale du commerce ENACO École à distance </p>
                         </MDBCardBody>
                       </MDBCollapse>
                     </MDBCard>
@@ -61,9 +61,9 @@ render() {
                         tag="h6"
                         tagClassName="text-uppercase white-text mb-0 d-flex justify-content-start align-items-center" >
                         <div className="d-flex justify-content-center align-items-center mr-4" class="fd-icon">
-                          <MDBIcon icon="suitcase" size="2x" className="m-3 white-text" />
+                          <MDBIcon icon="check-circle" size="2x" className="m-3 white-text" />
                         </div>
-                        Licence professionnelle Mention Commerce 
+                        Licence Management et Gestion des Organisations
                         <MDBIcon icon="caret-down" />
                       </MDBCollapseHeader>
 
@@ -71,8 +71,7 @@ render() {
                         <MDBCardBody className="rgba-black-light white-text z-depth-1">
                           <MDBIcon icon="calendar-alt" /> 2017-2018
                           <p className="p-md-4 mb-0">
-                          Spécialité Développement Commercial et Gestion des Echanges -
-	                        Université de Picardie Jules Verne – Beauvais (60)
+                          Mention A. Bien - Université de l'UPEC /ENC
                           </p>
                         </MDBCardBody>
                       </MDBCollapse>
@@ -85,7 +84,7 @@ render() {
                         tag="h6"
                         tagClassName="text-uppercase white-text mb-0 d-flex justify-content-start align-items-center">
                         <div className="d-flex justify-content-center align-items-center mr-4" class="fd-icon" >
-                          <MDBIcon icon="suitcase" size="2x" className="m-3 white-text" />
+                          <MDBIcon icon="check-circle" size="2x" className="m-3 white-text" />
                         </div>
                         BTS Management des Unités Commerciales
                         <MDBIcon icon="caret-down" />
@@ -93,9 +92,9 @@ render() {
 
                       <MDBCollapse id="collapse3" isOpen={this.state.collapseID}>
                         <MDBCardBody className="rgba-black-light white-text z-depth-1">
-                          <MDBIcon icon="calendar-alt" /> 2015-2017
+                          <MDBIcon icon="calendar-alt" /> 2015-2016
                           <p className="p-md-4 mb-0">
-                          Lycée Charles de Gaulle – Compiègne (60)
+                          VAE Académie de Paris
                           </p>
                         </MDBCardBody>
                       </MDBCollapse>
@@ -108,19 +107,15 @@ render() {
                         tag="h6"
                         tagClassName="text-uppercase white-text mb-0 d-flex justify-content-start align-items-center" >
                         <div className="d-flex justify-content-center align-items-center mr-4" class="fd-icon">
-                          <MDBIcon icon="suitcase" size="2x" className="m-3 white-text" />
+                          <MDBIcon icon="check-circle" size="2x" className="m-3 white-text" />
                         </div>
-                        Baccalauréat STMG  
+                        Licence d'Anglais
                         <MDBIcon icon="caret-down" />
                       </MDBCollapseHeader>
 
                       <MDBCollapse id="collapse4" isOpen={this.state.collapseID}>
                         <MDBCardBody className="rgba-black-light white-text z-depth-1">
-                          <MDBIcon icon="calendar-alt" /> 2014-2015
-                          <p className="p-md-4 mb-0">
-                          Spécialité Gestion et Finance -
-                          Lycée Charles de Gaulle – Compiègne (60)
-                          </p>
+                          <MDBIcon icon="calendar-alt" /> 2000-2004
                         </MDBCardBody>
                       </MDBCollapse>
                     </MDBCard>

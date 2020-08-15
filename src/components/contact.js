@@ -15,70 +15,36 @@ class Contact extends React.Component {
     return(
       <MDBContainer>
         <MDBRow id="card1">
-          <MDBAnimation type="fadeInLeft" delay=".3s"
-            className="text-center text-md-left col-md-6 mt-xl-5 mb-5" >
-              <MDBCardBody className="white-text">
-                <h1 className="h1-responsive font-weight-bold">
-                Développeuse Web junior
-                </h1>
-                <hr className="hr-light" />
-                <h6 className="mb-4">
-                  Ayant obtenu un titre professionnel (inscrit au RNCP) de niveau 5 (BTS/DUT),  
-                  de développeur/se Web et Web mobile suite à une réorientation de carrière, 
-                  je suis à la recherche d'une première expérience en entreprise afin d'y faire mes preuves.
-                </h6>
-            </MDBCardBody>
-          </MDBAnimation>
 
-          <MDBCol md="6" xl="5" className="mb-4">
-            <MDBAnimation type="fadeInRight" delay=".3s">
-              <MDBCard id="classic-card">
-                <MDBCardBody className="white-text">
+          <MDBCol>
+              <MDBAnimation type="fadeInLeft" delay=".3s">
+                <MDBCard id="classic-card">
+                  <MDBCardBody className="white-text">
 
-                  <h3 className="text-center">
-                    <MDBIcon icon="user" /> Margaux Letellier
-                  </h3>
-                  <hr className="hr-light" />
+                    <h3 className="text-center"><MDBIcon icon="user" /> Yamina NAIT AMER</h3>
+                    <hr className="hr-light" /><hr/>
 
-                  <MDBCardText className="white-text">
-                  <p><MDBIcon icon="birthday-cake" /> 20/11/1996 - 23ans</p>
-                  <p><MDBIcon icon="envelope" /> lmargauxgo@aol.com</p>
-                  <p><MDBIcon icon="car" /> Permis B + voiture</p>
-                  </MDBCardText>
+                    <MDBCardText className="white-text">
+                    <p><MDBIcon icon="mobile" /> 06.14.72.36.68 </p><hr/>
+                    <p><MDBIcon icon="envelope" /> nait_sy@yahoo.fr</p><hr/>
+                    </MDBCardText>
 
-                  <div className="text-center mt-4 black-text">
-                    <hr className="hr-light" />
-                    <div className="text-center d-flex justify-content-center white-label">
-                      <p className="white-text" id="blabla">Accédez à mon :
-                        <a href="https://www.linkedin.com/in/margaux-letellier-a0447517b/" className="p-2 m-2">
-                          <MDBIcon
-                            fab
-                            icon="linkedin"
-                            className="white-text"
-                          />
-                        </a>
-                        <a href="https://github.com/MargauxLet" className="p-2 m-2">
-                          <MDBIcon
-                            fab
-                            icon="github"
-                            className="white-text"
-                          />
-                        </a>
-                        <a href="https://gitlab.com/MargauxLet" className="p-2 m-2">
-                          <MDBIcon
-                            fab
-                            icon="gitlab"
-                            className="white-text"
-                          />
-                        </a>
-                      </p>
-                    </div>
-                  </div>
+                    <hr className="hr-light" /><hr/>
 
-                </MDBCardBody>
-              </MDBCard>
-            </MDBAnimation>
-          </MDBCol>
+                    <h6 className="mb-4">
+                      A la fois femme de réflexion et de communication, je reste avant tout une femme de terrain, 
+                      commerçante par nature pragmatique. Dotée, d’une forte culture de mode et du service, appuyée 
+                      par de réelles mises en pratique, de solides valeurs et une éthique irréprochable, ma vision de 
+                      l’entreprise s’oriente naturellement autour des hommes qui la font vivre et se mobilisant quotidiennement 
+                      autour de projets. Très investie « challengeuse » j’ai toujours à cours de mener à bien les missions confiées 
+                      avec haut niveau d’exigence dans un objectif de résultats.
+                    </h6><hr/>
+
+                  </MDBCardBody>
+                </MDBCard>
+              </MDBAnimation>
+            </MDBCol>
+
         </MDBRow>
       </MDBContainer>
     );

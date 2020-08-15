@@ -15,7 +15,7 @@ import {
 } from "mdbreact";
 
 import "./accueil.css";
-import picture from "../pictures/IMG_6767.JPG";
+import picture from "../pictures/photo.jpg";
 
 class accueil extends React.Component {
     render() {
@@ -28,21 +28,20 @@ class accueil extends React.Component {
                             <MDBRow >
                                 <MDBCol>
                                     <MDBCard testimonial>
-                                        <MDBCardUp className='indigo lighten-1' />
+                                        <MDBCardUp className='orange darken-3' />
                                         <MDBAvatar className='mx-auto white'>
                                             <img src={picture} alt='' />
                                         </MDBAvatar>
                                         <MDBCardBody>
-                                            <h4 className='card-title'>Margaux LETELLIER</h4>
-                                            <h6 className="h6-responsive font-weight-bold">Développeuse Web junior</h6>
+                                            <h4 className='card-title'>Yamina NAIT AMER</h4>
+                                            <h6 className="h6-responsive font-weight-bold">Directrice de centre de profit</h6>
                                             <hr className="hr-light" />
                                             <p> <MDBIcon icon='quote-left' />
-                                            {' '}Ayant obtenu un titre professionnel (inscrit au RNCP) de niveau 5 (BTS/DUT),  
-                                            de développeur/se Web et Web mobile suite à une réorientation de carrière, 
-                                            je suis à la recherche d'une première expérience en entreprise afin d'y faire mes preuves.{' '}
+                                            {' '}Très investie « challengeuse » j’ai toujours à cours de mener à bien les missions 
+                                            confiées avec haut niveau d’exigence dans un objectif de résultats.{' '}
                                             <MDBIcon icon='quote-right' /> </p>
                                         </MDBCardBody>
-                                        <Link id="btn" to={'/navBar'}><MDBBtn gradient="blue"><span> Mon CV </span></MDBBtn></Link>
+                                        <Link id="btn" to={'/navBar'}><MDBBtn color="orange"><span> Mon CV </span></MDBBtn></Link>
                                     </MDBCard>
                                 </MDBCol>
                             </MDBRow>
