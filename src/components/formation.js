@@ -44,8 +44,12 @@ render() {
                         </div>
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
                         Master Management et Gestion des Entreprises
                         <MDBIcon icon="caret-down" />
+=======
+                        Formation Qualifiante Développeur Web et Web Mobile 
+>>>>>>> parent of b5f0e172... commit 5.1
 =======
                         Formation Qualifiante Développeur Web et Web Mobile 
 >>>>>>> parent of b5f0e172... commit 5.1
@@ -73,8 +77,12 @@ render() {
                         </div>
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
                         Licence Management et Gestion des Organisations
                         <MDBIcon icon="caret-down" />
+=======
+                        Licence professionnelle Mention Commerce 
+>>>>>>> parent of b5f0e172... commit 5.1
 =======
                         Licence professionnelle Mention Commerce 
 >>>>>>> parent of b5f0e172... commit 5.1
@@ -126,8 +134,12 @@ render() {
                         </div>
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
                         Licence d'Anglais
                         <MDBIcon icon="caret-down" />
+=======
+                        Baccalauréat STMG  
+>>>>>>> parent of b5f0e172... commit 5.1
 =======
                         Baccalauréat STMG  
 >>>>>>> parent of b5f0e172... commit 5.1
