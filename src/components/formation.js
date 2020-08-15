@@ -37,39 +37,19 @@ render() {
                       <MDBCollapseHeader
                         onClick={this.toggleCollapse("collapse1")}
                         className="p-0 z-depth-1"
-                        tag="h5"
+                        tag="h6"
                         tagClassName="text-uppercase white-text mb-0 d-flex justify-content-start align-items-center">
                         <div className="d-flex justify-content-center align-items-center mr-4" class="fd-icon" >
-                          <MDBIcon icon="check-circle" size="2x" className="m-3 white-text " />
+                          <MDBIcon icon="laptop-code" size="2x" className="m-3 white-text " />
                         </div>
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-                        Master Management et Gestion des Entreprises
+                        Formation Qualifiante Développeur Web et Web Mobile 
                         <MDBIcon icon="caret-down" />
-=======
-                        Formation Qualifiante Développeur Web et Web Mobile 
->>>>>>> parent of b5f0e172... commit 5.1
-=======
-                        Formation Qualifiante Développeur Web et Web Mobile 
->>>>>>> parent of b5f0e172... commit 5.1
-=======
-                        Formation Qualifiante Développeur Web et Web Mobile 
->>>>>>> parent of b5f0e172... commit 5.1
-=======
-                        Formation Qualifiante Développeur Web et Web Mobile 
->>>>>>> parent of b5f0e172... commit 5.1
-=======
-                        Formation Qualifiante Développeur Web et Web Mobile 
->>>>>>> parent of b5f0e172... commit 5.1
                       </MDBCollapseHeader>
 
                       <MDBCollapse id="collapse1" isOpen={this.state.collapseID}>
                         <MDBCardBody className="rgba-black-light white-text z-depth-1">
-                          <MDBIcon icon="calendar-alt" /> 2018-2020
-                          <p className="p-md-4 mb-0"> École nationale du commerce ENACO École à distance </p>
+                          <MDBIcon icon="calendar-alt" /> 2019-2020
+                          <p className="p-md-4 mb-0"> Centre Afpa – Beauvais (60) </p>
                         </MDBCardBody>
                       </MDBCollapse>
                     </MDBCard>
@@ -78,40 +58,21 @@ render() {
                       <MDBCollapseHeader
                         onClick={this.toggleCollapse("collapse2")}
                         className="p-0 z-depth-1"
-                        tag="h5"
+                        tag="h6"
                         tagClassName="text-uppercase white-text mb-0 d-flex justify-content-start align-items-center" >
                         <div className="d-flex justify-content-center align-items-center mr-4" class="fd-icon">
-                          <MDBIcon icon="check-circle" size="2x" className="m-3 white-text" />
+                          <MDBIcon icon="suitcase" size="2x" className="m-3 white-text" />
                         </div>
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-                        Licence Management et Gestion des Organisations
+                        Licence professionnelle Mention Commerce 
                         <MDBIcon icon="caret-down" />
-=======
-                        Licence professionnelle Mention Commerce 
->>>>>>> parent of b5f0e172... commit 5.1
-=======
-                        Licence professionnelle Mention Commerce 
->>>>>>> parent of b5f0e172... commit 5.1
-=======
-                        Licence professionnelle Mention Commerce 
->>>>>>> parent of b5f0e172... commit 5.1
-=======
-                        Licence professionnelle Mention Commerce 
->>>>>>> parent of b5f0e172... commit 5.1
-=======
-                        Licence professionnelle Mention Commerce 
->>>>>>> parent of b5f0e172... commit 5.1
                       </MDBCollapseHeader>
 
                       <MDBCollapse id="collapse2" isOpen={this.state.collapseID}>
                         <MDBCardBody className="rgba-black-light white-text z-depth-1">
                           <MDBIcon icon="calendar-alt" /> 2017-2018
                           <p className="p-md-4 mb-0">
-                          Mention A. Bien - Université de l'UPEC /ENC
+                          Spécialité Développement Commercial et Gestion des Echanges -
+	                        Université de Picardie Jules Verne – Beauvais (60)
                           </p>
                         </MDBCardBody>
                       </MDBCollapse>
@@ -121,19 +82,20 @@ render() {
                       <MDBCollapseHeader
                         onClick={this.toggleCollapse("collapse3")}
                         className="p-0 z-depth-1"
-                        tag="h5"
+                        tag="h6"
                         tagClassName="text-uppercase white-text mb-0 d-flex justify-content-start align-items-center">
                         <div className="d-flex justify-content-center align-items-center mr-4" class="fd-icon" >
-                          <MDBIcon icon="check-circle" size="2x" className="m-3 white-text" />
+                          <MDBIcon icon="suitcase" size="2x" className="m-3 white-text" />
                         </div>
                         BTS Management des Unités Commerciales
+                        <MDBIcon icon="caret-down" />
                       </MDBCollapseHeader>
 
                       <MDBCollapse id="collapse3" isOpen={this.state.collapseID}>
                         <MDBCardBody className="rgba-black-light white-text z-depth-1">
-                          <MDBIcon icon="calendar-alt" /> 2015-2016
+                          <MDBIcon icon="calendar-alt" /> 2015-2017
                           <p className="p-md-4 mb-0">
-                          VAE Académie de Paris
+                          Lycée Charles de Gaulle – Compiègne (60)
                           </p>
                         </MDBCardBody>
                       </MDBCollapse>
@@ -143,38 +105,22 @@ render() {
                       <MDBCollapseHeader
                         onClick={this.toggleCollapse("collapse4")}
                         className="p-0 z-depth-1"
-                        tag="h5"
+                        tag="h6"
                         tagClassName="text-uppercase white-text mb-0 d-flex justify-content-start align-items-center" >
                         <div className="d-flex justify-content-center align-items-center mr-4" class="fd-icon">
-                          <MDBIcon icon="check-circle" size="2x" className="m-3 white-text" />
+                          <MDBIcon icon="suitcase" size="2x" className="m-3 white-text" />
                         </div>
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-                        Licence d'Anglais
+                        Baccalauréat STMG  
                         <MDBIcon icon="caret-down" />
-=======
-                        Baccalauréat STMG  
->>>>>>> parent of b5f0e172... commit 5.1
-=======
-                        Baccalauréat STMG  
->>>>>>> parent of b5f0e172... commit 5.1
-=======
-                        Baccalauréat STMG  
->>>>>>> parent of b5f0e172... commit 5.1
-=======
-                        Baccalauréat STMG  
->>>>>>> parent of b5f0e172... commit 5.1
-=======
-                        Baccalauréat STMG  
->>>>>>> parent of b5f0e172... commit 5.1
                       </MDBCollapseHeader>
 
                       <MDBCollapse id="collapse4" isOpen={this.state.collapseID}>
                         <MDBCardBody className="rgba-black-light white-text z-depth-1">
-                          <MDBIcon icon="calendar-alt" /> 2000-2004
+                          <MDBIcon icon="calendar-alt" /> 2014-2015
+                          <p className="p-md-4 mb-0">
+                          Spécialité Gestion et Finance -
+                          Lycée Charles de Gaulle – Compiègne (60)
+                          </p>
                         </MDBCardBody>
                       </MDBCollapse>
                     </MDBCard>

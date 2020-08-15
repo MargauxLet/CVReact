@@ -6,7 +6,7 @@
   left: 0;
   width: 100vw;
   height: 100vh;
-  background-image: url("../src/pictures/fond.jpg");
+  background-image: url("../src/pictures/coding-926242_1920.jpg");
   background-size: cover;
 }
 
@@ -17,6 +17,7 @@
     -moz-border-radius:50px;
     border-radius:50px;
     width:90px;
+    min-width: 90px;
     height:90px;
   }
   
@@ -34,7 +35,7 @@ main .card {
   background-color: transparent;
 }
 #classic-card{
-  background-color: rgba(0, 0, 0, 0.521);
+  background-color: rgba(126, 123, 215, 0.3);
 }
 h6{
   line-height: 1.7;
@@ -50,7 +51,7 @@ h6{
 }
 
 #noFond .card{
-  background-color: rgba(0, 0, 0, 0.521);
+  background-color: rgba(126, 123, 215, 0.1);
 }
 
 #noFond .card-body{
@@ -63,37 +64,27 @@ h6{
 }
 
 #exp .step-content{
-  background-color: rgba(0, 0, 0, 0.521);
+  background-color: rgba(126, 123, 215, 0.3);
 }
 
 /* CONTACT */
 #card1 .card-body{
-<<<<<<< HEAD
-  background-color: rgba(0, 0, 0, 0.267);
-=======
   background-color: rgba(126, 123, 215, 0.3);
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
->>>>>>> parent of b5f0e172... commit 5.1
-=======
->>>>>>> parent of b5f0e172... commit 5.1
-=======
->>>>>>> parent of b5f0e172... commit 5.1
-=======
->>>>>>> parent of b5f0e172... commit 5.1
+}
+#blabla{
+  font-size: 13px;
 }
 
 /* FORMATION */
 #form .card{
-  background-color: rgba(0, 0, 0, 0.521);
+  background-color: rgba(126, 123, 215, 0.3);
 }
 
 #form .fd-icon{
   background-color: transparent;
-  min-width: 100px;
+  min-width: 70px;
 }
 
 #form .card-header{
-  background-color: rgba(0, 0, 0, 0.521);
+  background-color: rgba(126, 123, 215, 0.8);
 }

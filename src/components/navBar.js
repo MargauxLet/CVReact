@@ -14,7 +14,7 @@ import Formation from "./formation";
 import Contact from "./contact";
 import Experience from "./experience";
 
-import picture from "../pictures/photo.jpg";
+import picture from "../pictures/IMG_6767.JPG";
 import "../index.css";
 
 class NavbarPage extends Component {
@@ -72,7 +72,7 @@ render() {
                 <MDBNavLink link to="#"
                 active={this.state.activeItem === "1"}
                 onClick={this.toggle("1")}
-                role="tab"><MDBIcon icon="address-card" /> A propos de moi</MDBNavLink>
+                role="tab"><MDBIcon icon="address-card" /> Contact</MDBNavLink>
               </MDBNavItem>
               <MDBNavItem>
                   <MDBNavLink link to="#!"

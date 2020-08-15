@@ -11,7 +11,8 @@ import { MDBAnimation,
   MDBCardImage,
   MDBCardBody, 
   MDBCardTitle, 
-  MDBCardText
+  MDBCardText, 
+  MDBProgress
 } from "mdbreact";
 
 const MultiCarouselPage = () => {
@@ -19,27 +20,7 @@ const MultiCarouselPage = () => {
   return (
     <div id="noFond">
       <MDBContainer>
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-        <MDBCarousel activeItem={1} length={1} slide={true} showControls={false} showIndicators={false} multiItem interval={false}>
-=======
-        <MDBCarousel activeItem={1} length={5} slide={true} showControls={false} showIndicators={true} multiItem>
->>>>>>> parent of b5f0e172... commit 5.1
-=======
-        <MDBCarousel activeItem={1} length={5} slide={true} showControls={false} showIndicators={true} multiItem>
->>>>>>> parent of b5f0e172... commit 5.1
-=======
-        <MDBCarousel activeItem={1} length={5} slide={true} showControls={false} showIndicators={true} multiItem>
->>>>>>> parent of b5f0e172... commit 5.1
-=======
-        <MDBCarousel activeItem={1} length={5} slide={true} showControls={false} showIndicators={true} multiItem>
->>>>>>> parent of b5f0e172... commit 5.1
-=======
-        <MDBCarousel activeItem={1} length={5} slide={true} showControls={false} showIndicators={true} multiItem>
->>>>>>> parent of b5f0e172... commit 5.1
+        <MDBCarousel activeItem={1} length={5} slide={true} showControls={true} showIndicators={true} multiItem interval={30000}>
           <MDBCarouselInner>
             <MDBRow>
 
@@ -47,53 +28,187 @@ const MultiCarouselPage = () => {
               <MDBAnimation type="fadeInLeft" delay=".3s">
                 <MDBCol md="4">
                   <MDBCard className="mb-2">
-                    <MDBCardImage className="img-fluid" src={require('../pictures/info.png')} />
+                    <MDBCardImage className="img-fluid" src={require('../pictures/HTML.png')} />
                     <MDBCardBody>
-                      <MDBCardTitle align="center"> COMPETENCES INFORMATIQUE : </MDBCardTitle>
-                      <MDBCardText>
-                        - Environnement Windows <br/>
-                        - MS Dos <br/>
-                        – Très bonne maitrise d’Excel, Power Point et Word.<br/>
-                        - Photoshop <br/>
-                        - Outlook, Access, Publisher et Internet<br/>
-                        - Informatique Web création de site internet<br/>
-                        - Utilisation du logiciel de gestion des flux marchandises : GOLD.
-                      </MDBCardText>
+                      <MDBCardTitle align="center"> HTML / CSS / JS </MDBCardTitle>
+                      <MDBCardText>HTML</MDBCardText>
+                      <MDBProgress material value={60} animated height="20px" color="info" >60%</MDBProgress>
+                      <MDBCardText>CSS</MDBCardText>
+                      <MDBProgress material value={60} animated height="20px" color="info" >60%</MDBProgress>
+                      <MDBCardText>JavaScript</MDBCardText>
+                      <MDBProgress material value={40} animated height="20px" color="info" >40%</MDBProgress>
+                    </MDBCardBody>
+                  </MDBCard>
+                </MDBCol>
+                <MDBCol md="4">
+                  <MDBCard className="mb-2">
+                    <MDBCardImage className="img-fluid" src={require('../pictures/java.png')} />
+                    <MDBCardBody>
+                      <MDBCardTitle align="center"> JSE / JEE </MDBCardTitle>
+                      <MDBCardText>JSE</MDBCardText>
+                      <MDBProgress material value={40} animated height="20px" color="info" >40%</MDBProgress>
+                      <MDBCardText>JEE</MDBCardText>
+                      <MDBProgress material value={40} animated height="20px" color="info" >40%</MDBProgress>
+                    </MDBCardBody>
+                  </MDBCard>
+                </MDBCol>
+                <MDBCol md="4">
+                  <MDBCard className="mb-2">
+                    <MDBCardImage className="img-fluid" src={require('../pictures/cms.PNG')} />
+                    <MDBCardBody>
+                      <MDBCardTitle align="center">CMS</MDBCardTitle>
+                      <MDBCardText> Prestashop - Wordpress </MDBCardText>
+                      <MDBProgress material value={60} animated height="20px" color="info" >60%</MDBProgress>
+                    </MDBCardBody>
+                  </MDBCard>
+                </MDBCol>
+                </MDBAnimation>
+              </MDBCarouselItem>
 
+              <MDBCarouselItem itemId="2">
+              <MDBAnimation type="fadeInLeft" delay=".3s">
+                <MDBCol md="4">
+                  <MDBCard className="mb-2">
+                    <MDBCardImage className="img-fluid" src={require('../pictures/bootstrap.jpg')} />
+                    <MDBCardBody>
+                      <MDBCardTitle align="center">Bootstrap</MDBCardTitle>
+                      <MDBCardText> Bootstrap </MDBCardText>
+                      <MDBProgress material value={60} animated height="20px" color="info" >60%</MDBProgress>
                     </MDBCardBody>
                   </MDBCard>
                 </MDBCol>
                 <MDBCol md="4">
                   <MDBCard className="mb-2">
-                    <MDBCardImage className="img-fluid" src={require('../pictures/qualite.jpg')} />
+                    <MDBCardImage className="img-fluid" src={require('../pictures/hibernate.png')} />
                     <MDBCardBody>
-                      <MDBCardTitle align="center"> LANGUES / LOISIRS / QUALITES </MDBCardTitle>
-                      <MDBCardText> LANGUES :<br/>
-                      - Français et	Kabyle (langues maternelles) <br/>
-                      - Anglais : lu +++, écrit ++, parlé +<br/>
-                      - Italien : notions, perfectible.<br/>
-                      LOISIRS:<br/>
-                      Théâtre. Musique. Lecture.<br/>
-                      QUALITES:<br/>
-                      Réfléchie, dynamique, souriante, ponctuelle, rigoureuse et autonome.
-                      </MDBCardText>
+                      <MDBCardTitle align="center">Hibernate</MDBCardTitle>
+                      <MDBCardText> Hibernate </MDBCardText>
+                      <MDBProgress material value={20} animated height="20px" color="info" >20%</MDBProgress>
                     </MDBCardBody>
                   </MDBCard>
                 </MDBCol>
                 <MDBCol md="4">
                   <MDBCard className="mb-2">
-                    <MDBCardImage className="img-fluid" src={require('../pictures/manager.jpg')} />
+                    <MDBCardImage className="img-fluid" src={require('../pictures/eclipselink.jpg')} />
                     <MDBCardBody>
-                      <MDBCardTitle align="center">QUALITÉS MANAGÉRIALES</MDBCardTitle>
-                      <MDBCardText> -Attentive à chaque membre de l’équipe.<br/>
-                      - Identifier des potentiels et les faire grandir.<br/>
-                      - Créer des	opportunités	de croissance.<br/>
-                      - Donner des explications et fixer des objectifs<br/>
-                      - Faire un feedback régulier et fournir une aide précieuse.<br/>
-                      - Reconnaître quand le travail est bien fait et rendre l’équipe responsable de sa réussite.<br/>
-                      - Gestion de crise avec diplomatie.<br/>
-                      - Fédérer et rassembler les équipes.
-                      </MDBCardText>
+                      <MDBCardTitle align="center">EclipseLink</MDBCardTitle>
+                      <MDBCardText> EclipseLink </MDBCardText>
+                      <MDBProgress material value={20} animated height="20px" color="info" >20%</MDBProgress>
+                    </MDBCardBody>
+                  </MDBCard>
+                </MDBCol>
+                </MDBAnimation>
+              </MDBCarouselItem>
+
+              <MDBCarouselItem itemId="3">
+              <MDBAnimation type="fadeInLeft" delay=".3s">
+                <MDBCol md="4">
+                  <MDBCard className="mb-2">
+                    <MDBCardImage className="img-fluid" src={require('../pictures/react.png')} />
+                    <MDBCardBody>
+                      <MDBCardTitle align="center">React</MDBCardTitle>
+                      <MDBCardText> React </MDBCardText>
+                      <MDBProgress material value={40} animated height="20px" color="info" >40%</MDBProgress>
+                    </MDBCardBody>
+                  </MDBCard>
+                </MDBCol>
+                <MDBCol md="4">
+                  <MDBCard className="mb-2">
+                    <MDBCardImage className="img-fluid" src={require('../pictures/git.png')} />
+                    <MDBCardBody>
+                      <MDBCardTitle align="center">Git</MDBCardTitle>
+                      <MDBCardText> Git </MDBCardText>
+                      <MDBProgress material value={40} animated height="20px" color="info" >40%</MDBProgress>
+                    </MDBCardBody>
+                  </MDBCard>
+                </MDBCol>
+                <MDBCol md="4">
+                  <MDBCard className="mb-2">
+                    <MDBCardImage className="img-fluid" src={require('../pictures/maven.PNG')} />
+                    <MDBCardBody>
+                      <MDBCardTitle align="center">Maven</MDBCardTitle>
+                      <MDBCardText> Maven </MDBCardText>
+                      <MDBProgress material value={20} animated height="20px" color="info" >20%</MDBProgress>
+                    </MDBCardBody>
+                  </MDBCard>
+                </MDBCol>
+                </MDBAnimation>
+              </MDBCarouselItem>
+
+              <MDBCarouselItem itemId="4">
+              <MDBAnimation type="fadeInLeft" delay=".3s">
+                <MDBCol md="4">
+                  <MDBCard className="mb-2">
+                    <MDBCardImage className="img-fluid" src={require('../pictures/office.jpg')} />
+                    <MDBCardBody>
+                      <MDBCardTitle align="center">Office</MDBCardTitle>
+                      <MDBCardText> Word </MDBCardText>
+                      <MDBProgress material value={80} animated height="20px" color="info" >80%</MDBProgress>
+                      <MDBCardText> Excel </MDBCardText>
+                      <MDBProgress material value={60} animated height="20px" color="info" >60%</MDBProgress>
+                      <MDBCardText> PowerPoint </MDBCardText>
+                      <MDBProgress material value={80} animated height="20px" color="info" >80%</MDBProgress>
+                    </MDBCardBody>
+                  </MDBCard>
+                </MDBCol>
+                <MDBCol md="4">
+                  <MDBCard className="mb-2">
+                    <MDBCardImage className="img-fluid" src={require('../pictures/eclipse.png')} />
+                    <MDBCardBody>
+                      <MDBCardTitle align="center">Eclipse</MDBCardTitle>
+                      <MDBCardText> Eclipse JEE </MDBCardText>
+                      <MDBProgress material value={60} animated height="20px" color="info" >60%</MDBProgress>
+                    </MDBCardBody>
+                  </MDBCard>
+                </MDBCol>
+                <MDBCol md="4">
+                  <MDBCard className="mb-2">
+                    <MDBCardImage className="img-fluid" src={require('../pictures/VS Code.png')} />
+                    <MDBCardBody>
+                      <MDBCardTitle align="center">Visual Studio Code</MDBCardTitle>
+                      <MDBCardText> VS Code </MDBCardText>
+                      <MDBProgress material value={80} animated height="20px" color="info" >80%</MDBProgress>
+                    </MDBCardBody>
+                  </MDBCard>
+                </MDBCol>
+                </MDBAnimation>
+              </MDBCarouselItem>
+
+              <MDBCarouselItem itemId="5">
+              <MDBAnimation type="fadeInLeft" delay=".3s">
+                <MDBCol md="4">
+                  <MDBCard className="mb-2">
+                    <MDBCardImage className="img-fluid" src={require('../pictures/wamp-xampp.png')} />
+                    <MDBCardBody>
+                      <MDBCardTitle align="center">Wamp / Xampp</MDBCardTitle>
+                      <MDBCardText> Wamp </MDBCardText>
+                      <MDBProgress material value={60} animated height="20px" color="info" >60%</MDBProgress>
+                      <MDBCardText> Xampp </MDBCardText>
+                      <MDBProgress material value={60} animated height="20px" color="info" >60%</MDBProgress>
+                    </MDBCardBody>
+                  </MDBCard>
+                </MDBCol>
+                <MDBCol md="4">
+                  <MDBCard className="mb-2">
+                    <MDBCardImage className="img-fluid" src={require('../pictures/mariaDB-MySQL.jpg')} />
+                    <MDBCardBody>
+                      <MDBCardTitle align="center">SGBD</MDBCardTitle>
+                      <MDBCardText> MySql </MDBCardText>
+                      <MDBProgress material value={60} animated height="20px" color="info" >60%</MDBProgress>
+                      <MDBCardText> MariaDB </MDBCardText>
+                      <MDBProgress material value={40} animated height="20px" color="info" >40%</MDBProgress>
+                    </MDBCardBody>
+                  </MDBCard>
+                </MDBCol>
+                <MDBCol md="4">
+                  <MDBCard className="mb-2">
+                    <MDBCardImage className="img-fluid" src={require('../pictures/angEsp.png')} />
+                    <MDBCardBody>
+                      <MDBCardTitle align="center">Langues</MDBCardTitle>
+                      <MDBCardText> Anglais </MDBCardText>
+                      <MDBProgress material value={60} animated height="20px" color="info" >60%</MDBProgress>
+                      <MDBCardText> Espagnol </MDBCardText>
+                      <MDBProgress material value={40} animated height="20px" color="info" >40%</MDBProgress>
                     </MDBCardBody>
                   </MDBCard>
                 </MDBCol>
