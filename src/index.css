@@ -68,7 +68,11 @@ h6{
 
 /* CONTACT */
 #card1 .card-body{
+<<<<<<< HEAD
   background-color: rgba(0, 0, 0, 0.267);
+=======
+  background-color: rgba(126, 123, 215, 0.3);
+>>>>>>> parent of b5f0e172... commit 5.1
 }
 
 /* FORMATION */
