@@ -17,7 +17,6 @@
     -moz-border-radius:50px;
     border-radius:50px;
     width:90px;
-    min-width: 90px;
     height:90px;
   }
   
@@ -71,9 +70,6 @@ h6{
 #card1 .card-body{
   background-color: rgba(0, 0, 0, 0.267);
 }
-#blabla{
-  font-size: 13px;
-}
 
 /* FORMATION */
 #form .card{
@@ -82,7 +78,7 @@ h6{
 
 #form .fd-icon{
   background-color: transparent;
-  min-width: 70px;
+  min-width: 100px;
 }
 
 #form .card-header{

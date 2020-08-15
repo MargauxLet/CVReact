@@ -29,6 +29,7 @@ class Contact extends React.Component {
                     <p><MDBIcon icon="envelope" /> nait_sy@yahoo.fr</p><hr/>
                     </MDBCardText>
 
+<<<<<<< HEAD
                     <hr className="hr-light" /><hr/>
 
                     <h6 className="mb-4">
@@ -44,6 +45,34 @@ class Contact extends React.Component {
                 </MDBCard>
               </MDBAnimation>
             </MDBCol>
+=======
+                  <div className="text-center mt-4 black-text">
+                    <hr className="hr-light" />
+                    <div className="text-center d-flex justify-content-center white-label">
+                      <a href="https://www.linkedin.com/in/margaux-letellier-a0447517b/" className="p-2 m-2">
+                        <MDBIcon
+                          fab
+                          icon="linkedin"
+                          className="white-text"
+                        />
+                      </a>
+                      <a href="https://github.com/MargauxLet" className="p-2 m-2">
+                        <MDBIcon
+                          fab
+                          icon="github"
+                          className="white-text"
+                        />
+                      </a>
+                      <a href="https://gitlab.com/MargauxLet" className="p-2 m-2">
+                        <MDBIcon
+                          fab
+                          icon="gitlab"
+                          className="white-text"
+                        />
+                      </a>
+                    </div>
+                  </div>
+>>>>>>> parent of b5f0e172... commit 5.1
 
         </MDBRow>
       </MDBContainer>
