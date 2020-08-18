@@ -15,7 +15,7 @@ import {
 } from "mdbreact";
 
 import "./accueil.css";
-import picture from "../pictures/IMG_6767.JPG";
+import picture from "../pictures/IMG_1.jpg";
 
 class accueil extends React.Component {
     render() {

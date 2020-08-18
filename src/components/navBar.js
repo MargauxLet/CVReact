@@ -14,7 +14,7 @@ import Formation from "./formation";
 import Contact from "./contact";
 import Experience from "./experience";
 
-import picture from "../pictures/IMG_6767.JPG";
+import picture from "../pictures/IMG_1.jpg";
 import "../index.css";
 
 class NavbarPage extends Component {
